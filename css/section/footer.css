@@ -1,0 +1,128 @@
+.footer-wrapper {
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    font-family: var(--font-nunito);
+}
+
+.footer__description {
+    max-width: 480px;
+}
+
+.footer__offers {
+    max-width: 280px;
+}
+
+.footer__questions {
+    max-width: 280px;
+}
+
+.footer-wrapper h5 {
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 25px;
+}
+
+.footer-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer__description-contacts {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.footer__description-contacts a {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.footer__description-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-wrapper li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-wrapper li a {
+    line-height: 18px;
+    text-decoration: none;
+}
+.footer-wrapper li a:visited {
+    color: inherit;
+}
+
+.footer-wrapper li svg {
+    margin-bottom: 3px;
+}
+
+.footer__offers span {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 2px 10px;
+
+    background-color: var(--bg-white-secondary);
+    border-radius: 4px;
+
+    color: var(--text-black);
+
+    font-weight: bold;
+}
+
+.footer-wrapper ul li:hover a,
+.footer-wrapper ul li:hover svg path {
+    color: #F2BE22;
+    fill: #F2BE22;
+    text-decoration: solid underline;
+}
+
+@media screen and (max-width: 1180px) {
+
+    .footer__description>p {
+        max-width: 330px;
+    }
+
+    .footer__description-contacts {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        /* margin-left: 20px; */
+    }
+
+
+
+    .footer__description>p {
+        max-width: 500px;
+    }
+
+    .footer__description-contacts {
+        
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}

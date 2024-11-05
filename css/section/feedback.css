@@ -1,0 +1,141 @@
+.main__feedback-wrapper {
+    position: relative;
+    bottom: -95px;
+
+    background-color: var(--bg-white-secondary);
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 40px 100px;
+
+
+    border-radius: 6px;
+
+    box-shadow: 0px 0px 15px 0px #18121E1F;
+
+    font-family: var(--font-nunito);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main__feedback-article {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 380px;
+}
+
+.main__feedback-article>span {
+    color: var(--text-secondary);
+    font-size: 18px;
+    line-height: 20px;
+
+}
+
+.main__feedback-article>h4 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.main__feedback-email {
+    display: flex;
+    flex-direction: column;
+
+
+    gap: 5px;
+    max-width: 540px;
+}
+
+.main__feedback-email-input {
+    display: flex;
+    gap: 16px;
+}
+
+.main__feedback-email-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.main__feedback-email input {
+    border: none;
+    outline: none;
+
+    background-color: var(--bg-grey-secondary);
+
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 16px;
+
+    min-width: 280px;
+    max-width: 300px;
+    height: 44px;
+
+    border-radius: 4px;
+
+    margin-right: 10px;
+}
+
+.main__feedback-email-input>button {
+    padding: 12px 24px;
+    max-height: 44px;
+    align-self: flex-start;
+}
+
+.main__feedback-email input::placeholder {
+    color: var(--text-black);
+}
+
+.main__feedback-email-small-text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1180px) {
+
+    .main__feedback-wrapper {
+        padding: 30px 30px;
+        margin: 0 10px 10px;
+        position: static;
+    }
+
+    .main__feedback-article>span {
+        color: var(--text-secondary);
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+    .main__feedback-article>h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .main__feedback-email-input {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .main__feedback-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+
+        align-items: flex-start;
+        position: static;
+    }
+
+    .main__feedback-email-input input {
+        margin: 0;
+        max-width: 280px;
+        min-width: 200px
+    }
+
+    ;
+}

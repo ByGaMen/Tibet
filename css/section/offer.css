@@ -1,0 +1,123 @@
+.main__offer {
+    background-color: var(--bg-grey-secondary);
+}
+
+.main__offer-wrapper {
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+
+    gap: 80px;
+    font-family: var(--font-nunito);
+}
+
+.main__offer-text {
+
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.main__offer-text-p {
+    margin: 40px 0;
+}
+
+.main__offer-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.main__offer-text ul li {
+    display: grid;
+
+    grid-template-columns: 1fr 9fr;
+    column-gap: 5px;
+}
+
+.main__offer-text ul li img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: self-start;
+}
+
+.main__offer-text ul li h5 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.main__offer-text ul li p {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.main__offer-text button {
+    max-width: 236px;
+}
+
+.main__offer-images {
+    margin: 50px 0;
+    align-self: center;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 5px;
+    padding: 0 15px;
+}
+
+.main__offer-images img {
+    
+    width: 100%;
+
+}
+
+.main__offer-images img:nth-child(2),
+.main__offer-images img:nth-child(3) {
+    border-radius: 50px 0;
+}
+
+.main__offer-images img:nth-child(1),
+.main__offer-images img:nth-child(4) {
+    border-radius: 0 50px;
+}
+
+@media screen and (max-width: 1180px) {
+    .main__offer-wrapper {
+        flex-direction: column;
+    }
+        .main__offer-text {
+            align-self: center;
+        }
+    .main__offer-images {
+        margin: 50px 0;
+        align-self: center;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+
+    .main__offer-wrapper {
+        gap: 20px;
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+
+
+    .main__offer-text button {
+        align-self: center;
+    }
+
+    .main__offer-images {
+        display: none;
+    }
+
+}
